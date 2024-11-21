@@ -94,7 +94,7 @@ app.get("/jokebook/joke/:category", (req, res) => {
 })
 
 //TODO3
-
+app.use(express.static('public'))
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
